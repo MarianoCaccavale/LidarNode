@@ -1,0 +1,23 @@
+Lidar_config:
+  passthrough_edges: #in m
+    x_edge_start: 3.0
+    y_edge_start: -2.5 # -2.5
+    z_edge_start: -0.15
+    x_edge_end: 23.0
+    y_edge_end: 0
+    z_edge_end: 0.5
+    
+  cluster:
+    min_cluster_size: 5
+    max_cluster_size: 15000
+    cluster_tolerance: 0.4 #in m
+   
+  cone_identification:
+    lower_bound_estimation: 0.2 #in %
+    upper_bound_estimation: 2.0 #in % 2.00
+    
+  topic_names:
+    input_topic_name: /rslidar_points
+    output_topic_name: /lidar_cones
+    passthrough_topic_name: /passthrough_filter
+    voxel_topic_name: /voxel_filter

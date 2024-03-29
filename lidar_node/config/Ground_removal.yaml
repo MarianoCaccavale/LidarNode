@@ -1,0 +1,7 @@
+Ground_removal:
+  num_seg_: 1 # numero di segmenti con cui dividiamo la visione longitudinale (x) - NON IMLEMENTATA
+  num_iter_: 8 # numero di volte in cui re-stimiamo i minimi punti del ground calcolati sul nuovo gruppo di punti Pg e li confrontiamo agli effettivi 
+  num_lpr_: 400 # numero di punti che utilizza la prima iterazione per generare il gruppo Pg
+  th_seeds: 0.04 # threshold altezza in m da LPR(lowest point rapresentative) per cui un punto viene considerato appartenente al ground dal 
+  th_distance: 0.015 #soglia in m per cui un punto viene accorpato al ground
+  sensor_height: 0.12 #altezza in m del sensore
